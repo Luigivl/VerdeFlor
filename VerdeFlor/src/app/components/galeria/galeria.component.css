@@ -1,0 +1,37 @@
+.Principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e5e5;
+    width: 1583px;
+    margin-top: 1rem;
+    
+  }
+  .DivTitulo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  .Titulo {
+    font-size: 35px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: #212529;
+  }
+  .img {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .ImgGlobal {
+    height: 260px;
+    width: 260px;
+    border-radius: 8px;
+    margin-left: 2rem;
+  }
+  

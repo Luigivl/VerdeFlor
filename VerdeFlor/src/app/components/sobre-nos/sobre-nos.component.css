@@ -1,0 +1,63 @@
+.principal {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+  .imagem {
+    display: flex;
+    height: 557px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 20px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 1.5rem;
+    margin-left: 100px;
+    width: 50%;
+  }
+  .titulo {
+    font-size: 35px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    line-height: 3rem;
+    color: #212529;
+  }
+  .descricao {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: #212529;
+    color: #212529;
+    text-align: justify;
+    font-family: Outfit;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    width: 848px;
+    
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: #32f36c;
+    font-family: "Times New Roman", Times, serif;
+    font-variant: small-caps;
+    border: none;
+    margin-top: 3rem;
+    align-items: center;
+    padding: 10px 10px;
+    width: 310px;
+    height: 70px;
+  }
+  .button:hover{
+      background-color: rgb(0, 187, 55,0.80);
+  }

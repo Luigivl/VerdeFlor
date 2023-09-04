@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'VerdeFlor';
   teste= "teste"
+  menuAtivo = false;
+
+  toggleMenu() {
+    this.menuAtivo = !this.menuAtivo;
+  }
 }

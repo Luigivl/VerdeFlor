@@ -8,9 +8,11 @@
 }
 
 .Titulo {
-  font-size: 35px;
+  margin-top: 1rem;
+  font-size: 30px;
   font-family: Montserrat;
   color: #212529;
+ 
 }
 
 .iframe-container {
@@ -30,21 +32,52 @@
   justify-items: center;
   align-items: center;
   font-size: 30px;
+  
 }
 .TituloIcons {
   font-size: 20px;
-  margin-left: 0.6rem;
   color: #000;
   font-family: Times New Roman;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-right: 0.6rem;
+  
 }
 .descricao {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 900px;
+  text-align: center;
+ align-content: center;
+  width: 56rem;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.descricao-item p {
+  font-size: 20px;
+  color: #000;
+  font-family: Times New Roman;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  margin-left: 0.6rem;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 808px) {
+  .descricao {
+    flex-direction: column; /* Mude para uma coluna em telas menores */
+    align-items: center; /* Centralize os elementos na coluna */
+    text-align: center;
+  }
+
+  .descricao-item {
+    margin: 1rem 0; /* Espaço entre cada item de localização */
+  }
+
+  .descricao-item i {
+    margin: 0.6rem 0; /* Espaço entre o ícone e o texto */
+  }
 }

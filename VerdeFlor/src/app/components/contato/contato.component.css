@@ -1,0 +1,101 @@
+
+.Titulo {
+  font-size: 30px;
+  font-family: Montserrat;
+  color: #212529;
+}
+
+  .Principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+
+.StyleIcons {
+  display: flex;
+ 
+  font-size: 30px;
+  flex-direction: row;
+}
+.TituloIcons {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 20px;
+  margin-left: 0.6rem;
+  color: #000;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ 
+  margin-left: 0.5rem; /* Ajuste conforme necessário para o espaçamento entre o ícone e o texto */
+  vertical-align: middle; 
+}
+
+.teste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #9cffb9;
+  color: #28252a;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 1px 1px;
+  text-decoration: none;
+}
+
+.teste:hover {
+  background-color: #9cffb9;
+}
+.Midia {
+  display: flex;
+  font-size: 20px;
+  gap: 1rem;
+  margin-right: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction:column;
+  margin-bottom: 1rem; 
+}
+
+.Sociais {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente os ícones de mídia */
+  gap: 1rem;
+  margin-left: 20px; /* Adicionei uma margem à esquerda para separar o logotipo e os ícones */
+}
+.informacao{
+  display: flex;
+  flex-direction: column;
+}
+.Copy{
+  font-size: 20px;
+  color: #000;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .Principal {
+    flex-direction: column; /* Altera a direção para empilhar verticalmente */
+    align-items: center; /* Centraliza os elementos na vertical */
+  }
+
+  .logo {
+    margin-bottom: 2rem; /* Aumenta o espaço abaixo do logotipo */
+  }
+
+  .Sociais {
+    margin-left: 0; /* Remove a margem à esquerda */
+    margin-top: 1rem; /* Adiciona um espaçamento superior */
+  }
+}

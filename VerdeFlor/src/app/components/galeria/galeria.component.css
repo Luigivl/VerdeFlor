@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: #e8e5e5;
-    width: 1583px;
     margin-top: 1rem;
+   
+    width: 100%;
     
   }
   .DivTitulo {
@@ -14,24 +15,58 @@
   }
   
   .Titulo {
-    font-size: 35px;
+    font-size: 30px;
     font-family: Montserrat;
     display: flex;
     justify-content: center;
     justify-items: center;
     color: #212529;
   }
-  .img {
+  /* .img {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
-  }
-  .ImgGlobal {
+  } */
+  /* .ImgGlobal {
     height: 260px;
     width: 260px;
     border-radius: 8px;
     margin-left: 2rem;
-  }
-  
+  } */
+  #Galeria1>div{
+    
+    width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+   }
+   #Galeria1 .Foto img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+   }
+   .Foto{
+    height: 250px; /* Defina a altura desejada */
+    width: 250px; /* Defina a largura desejada */
+    background-size: cover !important;
+    background-position: center !important;
+   }
+   .Foto:target {
+    position: fixed;
+    width: 80%; /* Ajuste o tamanho conforme necessário */
+    top: 50%; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Ajuste a posição horizontal conforme necessário */
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Certifique-se de que as imagens fiquem acima de outros elementos */
+}
+.img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+

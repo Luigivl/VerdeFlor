@@ -3,6 +3,7 @@
     background-image: url(../../../assets/image/Home2.jpeg);
     width: 100%;
     height: 98%;
+    
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: contain;
@@ -58,7 +59,7 @@
   /* Estilos para resoluções menores */
 @media screen and (max-width: 768px) {
   .foto {
-    background-size: cover; /* Use background-size: cover para manter a imagem cobrindo o elemento */
+   width: 100%;
   }
 
   .text {

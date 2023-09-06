@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'VerdeFlor';
-  teste= "teste"
-  menuAtivo = false;
-
-  toggleMenu() {
-    this.menuAtivo = !this.menuAtivo;
-  }
+ 
 }

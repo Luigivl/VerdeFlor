@@ -1,37 +1,4 @@
-<div class="header">
-  <div class="logo">
-    <a>
-      <img class="logo-img" src="../assets/image/Logo.png" alt="Logo VerdeFlor" style="margin-left: 5rem;">
-    </a>
-    <button class="menu-toggle" (click)="toggleMenu()" *ngIf="!menuAtivo">
-      <i class="fas fa-bars"></i>
-    </button>
-    <button class="menu-toggle" (click)="toggleMenu()" *ngIf="menuAtivo">
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
- 
-  <div class="menu" [ngClass]="{'active': menuAtivo}">
-    <span class="titles">
-      <a href="#Home"> Home</a>
-      <a href="#SobreNos">Sobre Nós</a>
-      <a href="#Galeria">Galeria</a>
-      <a href="#Localizacao"> Localização</a>
-      <a href="#Contato">Contato</a>
-    </span>
-    <div>
-      <span class="Midia">
-        <a href=""> <i [class]="teste" class='fab fa-facebook fa-fw fa-1x'></i></a>
-        <a href="https://www.instagram.com/sitioverdeflor/"><i [class]="teste"
-            class='fab fa-instagram fa-fw fa-1x'></i></a>
-        <a href="https://www.linkedin.com/in/s%C3%ADtio-verde-flor-616039280/"> <i [class]="teste"
-            class='fab fa-linkedin fa-fw fa-1x'></i></a>
-      </span>
-    </div>
-  </div>
-</div>
-
-<app-home></app-home>
+<app-header></app-header>
 <app-sobre-nos></app-sobre-nos>
 <app-galeria></app-galeria>
 <app-localizacao></app-localizacao>

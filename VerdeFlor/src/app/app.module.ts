@@ -12,8 +12,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,20 @@ import {MatIconModule} from '@angular/material/icon';
     GaleriaComponent,
     LocalizacaoComponent,
     ContatoComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule, 
+    MatSidenavModule,
+    MatListModule
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

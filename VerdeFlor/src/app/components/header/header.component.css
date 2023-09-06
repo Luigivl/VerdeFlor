@@ -1,0 +1,81 @@
+.mat-button-link {
+  color: #51f868; /* Cor do texto */
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Outfit;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.teste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9cffb9;
+  color: white;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 1px 1px;
+  text-decoration: none;
+}
+
+.teste:hover {
+  background-color: #9cffb9;
+}
+
+a img {
+  max-width: 29%; /* Defina o tamanho máximo desejado em pixels */
+  max-height: 800px; /* Defina o tamanho máximo desejado em pixels */
+}
+
+.mat-toolbar {
+  background-color: rgba(109, 109, 109, 0.5);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mat-toolbar.header {
+  min-width: 200px; /* Defina a largura mínima desejada */
+}
+.mat-toolbar.header.opened {
+  margin-left: 320px; /* Defina a largura do sidenav mais uma margem desejada */
+}
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(109, 109, 109, 0.5);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.header a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #51f868; /* Cor de texto sem opacidade */
+  font-family: Outfit;
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 15rem;
+}
+.header .Midia {
+  display: flex;
+  font-size: 10px;
+  gap: 1rem;
+}
+
+.custom-sidenav {
+  background-color: #9cffb9;
+  z-index: 1000;
+}

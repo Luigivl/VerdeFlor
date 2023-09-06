@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
 
 @Component({
   selector: 'app-galeria',
@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./galeria.component.css']
 })
 export class GaleriaComponent {
+  lightboxImgSrc = '';
+  lightboxImgAlt = '';
 
+  abrirLightbox(imgSrc: string, imgAlt: string): void {
+    this.lightboxImgSrc = imgSrc;
+    this.lightboxImgAlt = imgAlt;
+    
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+      lightbox.style.display = 'block';
+    }
+  }
+
+  fecharLightbox(): void {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+      lightbox.style.display = 'none';
+    }
+  }
 }

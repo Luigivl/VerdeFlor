@@ -1,0 +1,69 @@
+<mat-toolbar class="header"  >
+    <mat-toolbar-row>
+       
+        <div class="logo">
+            <a href="#">
+                <img src="../../../assets/image/Logo.png" alt="Logo do Site"> 
+            </a>
+            
+        </div>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+            <mat-icon>menu</mat-icon>
+        </button>
+        
+        <div fxShow="true" fxHide.lt-md="true" class="menu">
+
+            <a href="#">
+                Home
+            </a>
+            <a href="#">
+                Sobre Nós
+            </a>
+            <a href="#">
+                Galeria
+            </a>
+            <a href="">
+                Localização
+            </a>
+            <a href="">
+                Contato
+            </a>
+        </div>
+        <div fxShow="true" fxHide.lt-md="true" class="Midia">
+            <a href=""> <i [class]="teste" class='fab fa-facebook fa-fw fa-1x'></i></a>
+            <a href="https://www.instagram.com/sitioverdeflor/"><i [class]="teste"
+                    class='fab fa-instagram fa-fw fa-1x'></i></a>
+            <a href="https://www.linkedin.com/in/s%C3%ADtio-verde-flor-616039280/"> <i [class]="teste"
+                    class='fab fa-linkedin fa-fw fa-1x'></i></a>
+
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav position="end"   class="custom-sidenav" >
+        <mat-nav-list>
+            <a (click)="toggleSidenav()" mat-list-item>
+                <mat-icon>close</mat-icon> 
+            </a>
+            <a href="#" mat-list-item>
+                
+                Home
+            </a>
+            <a href="#" mat-list-item>
+               
+               Sobre Nós</a>
+            <a href="#" mat-list-item>
+                Galeria
+            </a>
+            <a href="#" mat-list-item>
+                Localização
+            </a>
+            <a href="#" mat-list-item>
+                Contato
+            </a>
+           
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill><app-home></app-home></mat-sidenav-content>
+</mat-sidenav-container>

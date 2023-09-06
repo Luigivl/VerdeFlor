@@ -22,51 +22,69 @@
     justify-items: center;
     color: #212529;
   }
-  /* .img {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-    align-items: center;
-    justify-content: center;
-  } */
-  /* .ImgGlobal {
-    height: 260px;
-    width: 260px;
-    border-radius: 8px;
-    margin-left: 2rem;
-  } */
-  #Galeria1>div{
-    
-    width: 22%;
-    padding: 10px;
-    box-sizing: border-box;
-   }
-   #Galeria1 .Foto img{
-    width: 100%;
-    display: block;
-    height: 100%;
-    border-radius: 8px;
-   }
-   .Foto{
-    height: 250px; /* Defina a altura desejada */
-    width: 250px; /* Defina a largura desejada */
-    background-size: cover !important;
-    background-position: center !important;
-   }
-   .Foto:target {
-    position: fixed;
-    width: 80%; /* Ajuste o tamanho conforme necessário */
-    top: 50%; /* Ajuste a posição vertical conforme necessário */
-    left: 50%; /* Ajuste a posição horizontal conforme necessário */
-    transform: translate(-50%, -50%);
-    z-index: 9999; /* Certifique-se de que as imagens fiquem acima de outros elementos */
-}
+
+/* Estilos para a classe .img */
 .img {
-  display: flex;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 0.2fr); 
+  gap: 20px; 
+ margin-bottom: 2rem;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+}
+
+/* Estilos para a classe .Foto */
+.Foto {
+  text-align: center; /* Centralizar o conteúdo horizontalmente */
+  margin: 0 auto; /* Centralizar o conteúdo verticalmente */
+}
+
+/* Estilos para as imagens dentro das fotos */
+.Foto img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher todo o espaço do contêiner */
 }
 
 
+/* Estilos para o lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 1000; /* Garante que o lightbox esteja na parte superior */
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.lightbox-content img {
+  max-width: 90%; /* Define o tamanho máximo das imagens */
+  max-height: 90vh; /* Define o tamanho máximo das imagens com base na altura da visualização */
+  object-fit: contain; /* Mantém a proporção da imagem, centralizada */
+  margin-top: 4rem;
+ 
+}
+
+/* Estilos para a classe .img */
+.img {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 0.2fr);
+  gap: 20px;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+/* Estilos para a classe .Foto */
+.Foto {
+  text-align: center;
+  margin: 0 auto;
+}

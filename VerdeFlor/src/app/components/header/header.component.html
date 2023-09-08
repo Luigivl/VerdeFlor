@@ -13,19 +13,19 @@
         
         <div fxShow="true" fxHide.lt-md="true" class="menu">
 
-            <a href="#">
+            <a href="#Home">
                 Home
             </a>
-            <a href="#">
+            <a href="#SobreNos">
                 Sobre Nós
             </a>
-            <a href="#">
+            <a href="#Galeria">
                 Galeria
             </a>
-            <a href="">
+            <a href="#Localizacao">
                 Localização
             </a>
-            <a href="">
+            <a href="#Contato">
                 Contato
             </a>
         </div>
@@ -41,25 +41,25 @@
 </mat-toolbar>
 
 <mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav position="end"   class="custom-sidenav" >
-        <mat-nav-list>
-            <a (click)="toggleSidenav()" mat-list-item>
+    <mat-sidenav #sidenav position="end"  class="custom-sidenav" >
+        <mat-nav-list style="color: white;">
+            <!-- <a (click)="toggleSidenav()" mat-list-item>
                 <mat-icon>close</mat-icon> 
-            </a>
-            <a href="#" mat-list-item>
+            </a> -->
+            <a href="#Home" mat-list-item >
                 
                 Home
             </a>
-            <a href="#" mat-list-item>
+            <a href="#SobreNos" mat-list-item>
                
                Sobre Nós</a>
-            <a href="#" mat-list-item>
+            <a href="#Galeria" mat-list-item>
                 Galeria
             </a>
-            <a href="#" mat-list-item>
+            <a href="#Localizacao" mat-list-item>
                 Localização
             </a>
-            <a href="#" mat-list-item>
+            <a href="#Contato" mat-list-item>
                 Contato
             </a>
            

@@ -15,9 +15,9 @@
 
 .StyleIcons {
   display: flex;
- 
   font-size: 30px;
   flex-direction: row;
+  gap: 1rem;
 }
 .TituloIcons {
   display: flex;
@@ -95,7 +95,13 @@
   }
 
   .Sociais {
-    margin-left: 0; /* Remove a margem à esquerda */
+   
     margin-top: 1rem; /* Adiciona um espaçamento superior */
+  }
+  .StyleIcons{
+    gap: 0;
+  }
+  .informacao{
+    padding: 1rem;
   }
 }

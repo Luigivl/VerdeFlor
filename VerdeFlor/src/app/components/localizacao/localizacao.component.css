@@ -49,7 +49,7 @@
   align-items: center;
   text-align: center;
  align-content: center;
-  gap: 4rem;
+  gap: 7rem;
   justify-content: space-between;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -71,6 +71,7 @@
     flex-direction: column; /* Mude para uma coluna em telas menores */
     align-items: center; /* Centralize os elementos na coluna */
     text-align: center;
+    gap: 0;
   }
 
   .descricao-item {

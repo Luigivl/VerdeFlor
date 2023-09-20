@@ -78,7 +78,7 @@ a img {
 
 .custom-sidenav {
   color: white;
-  background-color:rgb(156, 255, 185,0.8);
+  background-color:rgb(156, 255, 185);
   z-index: 4;
   margin-top: 6rem;
   height: 40%; /* Ocupa toda a altura da tela */

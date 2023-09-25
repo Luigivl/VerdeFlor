@@ -1,7 +1,5 @@
 .Local {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
   background-color: #dfdada;
@@ -12,73 +10,72 @@
   font-size: 30px;
   font-family: Montserrat;
   color: #212529;
- 
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .iframe-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden; /* Impede a rolagem horizontal */
 }
 
 .iframe-container iframe {
-  display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
-.StyleIcons {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  font-size: 30px;
-  
-}
-.TituloIcons {
-  font-size: 20px;
-  color: #000;
-  font-family: Times New Roman;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  
-}
+
 .descricao {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
- align-content: center;
-  gap: 7rem;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: left;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.descricao-item p {
-  font-size: 20px;
-  color: #000;
+.descricao-item {
+  display: flex;
+  flex-direction: row; /* Ajuste para alinhar ícones ao lado das descrições */
+  align-items: center;
+  text-align: left;
+}
+
+.StyleIcons {
+  font-size: 40px; /* Tamanho do ícone */
+  color: #f84f35; /* Cor laranja */
+  margin-right: 1rem; /* Espaço entre o ícone e o texto */
+}
+
+.TituloIcons {
+  font-size: 20px; /* Tamanho do texto */
+  color: #000; /* Cor do texto */
   font-family: Times New Roman;
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  margin-left: 0.6rem;
+  margin-left: 1rem;
 }
 
 /* Estilos para telas menores */
 @media screen and (max-width: 808px) {
   .descricao {
-    flex-direction: column; /* Mude para uma coluna em telas menores */
-    align-items: center; /* Centralize os elementos na coluna */
-    text-align: center;
-    gap: 0;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
   }
 
   .descricao-item {
-    margin: 1rem 0; /* Espaço entre cada item de localização */
+    margin: 0.5rem 0;
   }
 
-  .descricao-item i {
-    margin: 0.6rem 0; /* Espaço entre o ícone e o texto */
+  .StyleIcons {
+    margin-right: 1rem; 
   }
 }
+

@@ -16,6 +16,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
+import { OrcamentoComponent } from './components/orcamento/orcamento.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HeaderComponent } from './components/header/header.component';
     LocalizacaoComponent,
     ContatoComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    OrcamentoComponent
   ],
   imports: [
     BrowserModule,

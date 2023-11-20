@@ -1,0 +1,12 @@
+.Local {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #a8a4a4;
+  }
+  .Titulo {
+    margin-top: 1rem;
+    font-size: 30px;
+    font-family: Montserrat;
+    color: #212529;
+  }
